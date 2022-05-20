@@ -4,6 +4,7 @@ import './components/Dashobard/charts/ChartjsConfig';
 import './components/Dashobard/css/style.scss';
 // Import pages
 import Dashboard from './pages/Dashboard';
+import Login from './pages/Login/Login';
 import './table-classes.css';
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route exact path='/' element={<Dashboard />} />
+        <Route path='/' element={<Dashboard />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
     </>
   );

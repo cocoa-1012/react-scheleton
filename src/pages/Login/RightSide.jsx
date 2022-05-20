@@ -48,7 +48,6 @@ const RightSide = () => {
             Log in
           </button>
         </div>
-        <AccountLogin />
       </form>
     </div>
   );

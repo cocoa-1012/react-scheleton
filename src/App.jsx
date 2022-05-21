@@ -2,8 +2,7 @@ import React, { useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import './components/Dashobard/charts/ChartjsConfig';
 import './components/Dashobard/css/style.scss';
-// Import pages
-import Dashboard from './pages/Dashboard';
+import DashboardRoutes from './components/Dashobard/DashboardRoutes';
 import Login from './pages/Login/Login';
 import './table-classes.css';
 
@@ -19,8 +18,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<Dashboard />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/dashboard/*' element={<DashboardRoutes />} />
       </Routes>
     </>
   );

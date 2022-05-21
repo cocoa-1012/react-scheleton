@@ -5,13 +5,12 @@ import UsersTable from '../components/Dashobard/Table/UsersTable';
 import Datepicker from '../components/partials/actions/Datepicker';
 import FilterButton from '../components/partials/actions/FilterButton';
 import DashboardAvatars from '../components/partials/dashboard/DashboardAvatars';
-import LayoutContainer from '../components/partials/LayoutContainer';
 
 const Dashboard = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <LayoutContainer>
+    <>
       {/* Dashboard actions */}
       <div className='mb-8 sm:flex sm:items-center sm:justify-between'>
         {/* Left: Avatars */}
@@ -39,7 +38,7 @@ const Dashboard = () => {
       <TopCards />
       <AllCharts />
       <UsersTable />
-    </LayoutContainer>
+    </>
   );
 };
 

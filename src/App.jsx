@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './app.css';
 import './components/Dashobard/charts/ChartjsConfig';
 import './components/Dashobard/css/style.scss';
 import DashboardRoutes from './components/Dashobard/DashboardRoutes';
@@ -30,6 +31,7 @@ function App() {
         pauseOnHover={false}
       />
       <Routes>
+        <Route path='/' element={<Navigate to={'/login'} />} />
         <Route path='/login' element={<Login />} />
         <Route path='/dashboard/*' element={<DashboardRoutes />} />
       </Routes>

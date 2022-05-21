@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Table = ({ cameras }) => {
   return (
@@ -21,7 +22,12 @@ const Table = ({ cameras }) => {
           {cameras.map((camera) => (
             <tr key={Math.random()}>
               <td className='w-3/4'>
-                <div className=''>{camera.name}</div>
+                <Link
+                  to={`/dashboard/camera/${camera.name}`}
+                  className='cursor-pointer'
+                >
+                  {camera.name}
+                </Link>
               </td>
               <td>
                 <div

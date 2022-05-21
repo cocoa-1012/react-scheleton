@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import AllCameras from '../../pages/Cameras/AllCamers';
 import Dashboard from '../../pages/Dashboard';
 import EventPage from '../../pages/Event/Event';
+import UploadData from '../../pages/UploadData/UploadData';
 import LayoutContainer from '../partials/LayoutContainer';
 
 const DashboardRoutes = () => {
@@ -12,6 +13,7 @@ const DashboardRoutes = () => {
         <Route path='/' element={<Dashboard />} />
         <Route path='/cameras' element={<AllCameras />} />
         <Route path='/events' element={<EventPage />} />
+        <Route path='/upload-data' element={<UploadData />} />
       </Routes>
     </LayoutContainer>
   );

@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaGithub, FaTwitter } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+const DATABASE_EMAIL = 'test@gmail.com';
+const DATABASE_PASSWORD = 'test12345';
 
 const RightSide = () => {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const submitHandler = (e) => {
+    e.preventDefault();
+    if (email === DATABASE_EMAIL && password === DATABASE_PASSWORD) {
+      navigate('/dashboard/');
+      return;
+    }
+
+    toast.error("Email and password didn't matched");
+  };
   return (
     <div className='bg-white p-5 md:flex-1'>
       <h3 className='my-4 text-2xl font-semibold text-gray-700'>
         Account Login
       </h3>
-      <form action='#' className='flex flex-col space-y-5'>
+      <form onSubmit={submitHandler} className='flex flex-col space-y-5'>
         <div className='flex flex-col space-y-1'>
           <label
             htmlFor='email'
@@ -15,7 +31,14 @@ const RightSide = () => {
           >
             Email address
           </label>
-          <input type='email' id='email' autofocus className='login-input' />
+          <input
+            type='email'
+            id='email'
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            autofocus
+            className='login-input'
+          />
         </div>
         <div className='flex flex-col space-y-1'>
           <div className='flex items-center justify-between'>
@@ -32,7 +55,13 @@ const RightSide = () => {
               Forgot Password?
             </a>
           </div>
-          <input type='password' id='password' className='login-input' />
+          <input
+            type='password'
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            id='password'
+            className='login-input'
+          />
         </div>
         <div className='flex items-center space-x-2'>
           <input type='checkbox' id='remember' className='login-checkbox' />

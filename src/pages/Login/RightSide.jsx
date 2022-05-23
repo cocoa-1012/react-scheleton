@@ -20,7 +20,7 @@ const RightSide = () => {
   };
   return (
     <div className='bg-white p-5 md:flex-1'>
-      <h3 className='my-4 text-2xl font-semibold text-gray-700'>
+      <h3 className='my-4 text-center text-2xl font-semibold text-gray-700'>
         Account Login
       </h3>
       <form onSubmit={submitHandler} className='flex flex-col space-y-5'>
@@ -48,12 +48,6 @@ const RightSide = () => {
             >
               Password
             </label>
-            <a
-              href='#'
-              className='text-sm text-blue-600 hover:underline focus:text-blue-800'
-            >
-              Forgot Password?
-            </a>
           </div>
           <input
             type='password'
@@ -63,15 +57,7 @@ const RightSide = () => {
             className='login-input'
           />
         </div>
-        <div className='flex items-center space-x-2'>
-          <input type='checkbox' id='remember' className='login-checkbox' />
-          <label
-            htmlFor='remember'
-            className='text-sm font-semibold text-gray-500'
-          >
-            Remember me
-          </label>
-        </div>
+
         <div>
           <button type='submit' className='login-button'>
             Log in

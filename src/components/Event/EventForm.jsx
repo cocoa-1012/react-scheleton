@@ -240,7 +240,7 @@ const EventForm = () => {
         </div>
       </fieldset>
 
-      <div>
+      <div className='mb-4 mt-6'>
         <label
           for='checked-toggle'
           class='relative mb-4 inline-flex cursor-pointer items-center'
@@ -268,7 +268,7 @@ const EventForm = () => {
       <button
         type='submit'
         onClick={showError}
-        class='ml-2 w-full rounded-lg bg-red-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800 sm:w-auto'
+        class=' mt-2 w-full rounded-lg bg-red-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800 sm:mt-0 sm:ml-2 sm:w-auto'
       >
         Submit for Error
       </button>

@@ -12,7 +12,7 @@ const DashboardRoutes = () => {
     <LayoutContainer>
       <Routes>
         <Route path='/' element={<Dashboard />} />
-        <Route path='/cameras' element={<AllCameras />} />
+        <Route path='/camera' element={<AllCameras />} />
         <Route path='/camera/:id' element={<SingleCamera />} />
         <Route path='/events' element={<EventPage />} />
         <Route path='/upload-data' element={<UploadData />} />

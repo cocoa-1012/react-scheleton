@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Notifications from './header/Notifications';
-import SearchModal from './header/SearchModal';
+// import Notifications from './header/Notifications';
+// import SearchModal from './header/SearchModal';
 import UserMenu from './header/UserMenu';
 
 function Header({ sidebarOpen, setSidebarOpen }) {
@@ -34,7 +34,7 @@ function Header({ sidebarOpen, setSidebarOpen }) {
 
           {/* Header: Right side */}
           <div className='flex items-center'>
-            <button
+            {/* <button
               className={`ml-3 flex h-8 w-8 items-center justify-center rounded-full bg-slate-100 transition duration-150 hover:bg-slate-200 ${
                 searchModalOpen && 'bg-slate-200'
               }`}
@@ -65,11 +65,11 @@ function Header({ sidebarOpen, setSidebarOpen }) {
               searchId='search'
               modalOpen={searchModalOpen}
               setModalOpen={setSearchModalOpen}
-            />
-            <Notifications />
+            /> */}
+            {/* <Notifications /> */}
 
             {/*  Divider */}
-            <hr className='mx-3 h-6 w-px bg-slate-200' />
+            {/* <hr className='mx-3 h-6 w-px bg-slate-200' /> */}
             <UserMenu />
           </div>
         </div>

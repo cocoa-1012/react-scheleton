@@ -9,15 +9,17 @@ const RightSide = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
   const submitHandler = (e) => {
     e.preventDefault();
     if (email === DATABASE_EMAIL && password === DATABASE_PASSWORD) {
-      navigate('/dashboard/');
+      navigate('/dashboard/camera');
       return;
     }
 
     toast.error("Email and password didn't matched");
   };
+
   return (
     <div className='bg-white p-5 md:flex-1'>
       <h3 className='my-4 text-center text-2xl font-semibold text-gray-700'>

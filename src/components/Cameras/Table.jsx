@@ -22,12 +22,21 @@ const Table = ({ cameras }) => {
           {cameras.map((camera) => (
             <tr key={Math.random()}>
               <td className='w-3/4'>
-                <Link
-                  to={`/dashboard/camera/${camera.name}`}
-                  className='cursor-pointer'
-                >
-                  {camera.name}
-                </Link>
+                {camera.status === 'online' ? (
+                  <Link
+                    to={`/dashboard/camera/${camera.name}`}
+                    className='cursor-pointer'
+                  >
+                    {camera.name}
+                  </Link>
+                ) : (
+                  <p
+                    to={`/dashboard/camera/${camera.name}`}
+                    className='cursor-not-allowed text-red-600'
+                  >
+                    {camera.name}
+                  </p>
+                )}
               </td>
               <td>
                 <div

@@ -18,11 +18,11 @@ const UsersTable = () => {
 const FilterBar = () => {
   return (
     <div className='mb-3 flex items-center justify-end'>
-      <div class='relative block'>
+      <div className='relative block'>
         <input
           placeholder='Search'
           type='search'
-          class='block w-full appearance-none  border-0 border-b border-gray-400 bg-white py-2 px-1 text-sm text-gray-700 placeholder-gray-400 outline-none focus:bg-white focus:text-gray-700 focus:placeholder-gray-600 sm:rounded-l-none'
+          className='block w-full appearance-none  border-0 border-b border-gray-400 bg-white py-2 px-1 text-sm text-gray-700 placeholder-gray-400 outline-none focus:bg-white focus:text-gray-700 focus:placeholder-gray-600 sm:rounded-l-none'
         />
       </div>
     </div>
@@ -97,20 +97,20 @@ const Pagination = () => {
   return (
     <div className='flex justify-between'>
       <div className=''>
-        <select class='block h-full w-full appearance-none border-0 border-b bg-white py-2 pl-2 pr-8 leading-tight text-gray-700 outline-none'>
+        <select className='block h-full w-full appearance-none border-0 border-b bg-white py-2 pl-2 pr-8 leading-tight text-gray-700 outline-none'>
           <option>5</option>
           <option>10</option>
           <option>20</option>
         </select>
       </div>
       <nav aria-label='Page navigation example'>
-        <ul class='inline-flex items-center -space-x-px'>
+        <ul className='inline-flex items-center -space-x-px'>
           <li>
             <a
               href='#'
-              class='ml-0 block rounded-l-lg border border-gray-300 bg-white py-2 px-3 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
+              className='ml-0 block rounded-l-lg border border-gray-300 bg-white py-2 px-3 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
             >
-              <span class='sr-only'>Previous</span>
+              <span className='sr-only'>Previous</span>
               <FaAngleLeft />
             </a>
           </li>
@@ -118,7 +118,7 @@ const Pagination = () => {
           <li>
             <a
               href='#'
-              class='border border-gray-300 bg-white py-2 px-3 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
+              className='border border-gray-300 bg-white py-2 px-3 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
             >
               1
             </a>
@@ -127,9 +127,9 @@ const Pagination = () => {
           <li>
             <a
               href='#'
-              class='block rounded-r-lg border border-gray-300 bg-white py-2 px-3 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
+              className='block rounded-r-lg border border-gray-300 bg-white py-2 px-3 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
             >
-              <span class='sr-only'>Next</span>
+              <span className='sr-only'>Next</span>
               <FaAngleRight />
             </a>
           </li>

@@ -8,7 +8,7 @@ const UploadData = () => {
     <div>
       <div className=''>
         <div>
-          <div class='group relative z-0 mb-6 w-full'>
+          <div className='group relative z-0 mb-6 w-full'>
             <div className='w- block bg-gray-50 p-2.5 text-sm text-lg  text-gray-500 dark:bg-gray-700 dark:text-white '>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
               architecto? Quae aliquid ut temporibus a, veniam quam molestiae
@@ -46,7 +46,7 @@ const UploadData = () => {
           </div>
           <button
             type='submit'
-            class='w-full rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 sm:w-auto'
+            className='w-full rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 sm:w-auto'
             onClick={showSuccess}
           >
             Upload data

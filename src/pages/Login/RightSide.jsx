@@ -38,7 +38,7 @@ const RightSide = () => {
             id='email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            autofocus
+            autoFocus
             className='login-input'
           />
         </div>

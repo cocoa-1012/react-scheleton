@@ -42,10 +42,21 @@ const SingleCamera = () => {
     ],
     [id]
   );
+
+  const refreshCamera = () => {
+    toast.success('camera refresh');
+  };
   return (
     <div>
       <Breadcrumb breadcrumb={breadcrumb || []} />
       <div className='rounded-lg bg-white p-3 pb-5'>
+        <button
+          onClick={refreshCamera}
+          type='submit'
+          class='w-full rounded-sm bg-indigo-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-indigo-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800 sm:w-auto'
+        >
+          Refresh
+        </button>
         <div>
           <div className='h-96 select-none overflow-hidden'>
             <img src={image} alt='' className='h-full w-full object-contain' />

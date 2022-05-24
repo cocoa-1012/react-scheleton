@@ -3,12 +3,19 @@
 }
 
 .custom-table {
-  @apply rounded-sm bg-slate-50 text-xs uppercase text-slate-400;
+  @apply rounded-sm bg-slate-50 text-xs  text-slate-400;
 }
 
 .custom-table th,
 .custom-table td {
   @apply p-2;
+}
+
+.custom-table th {
+  @apply border-b font-bold text-black;
+}
+.custom-table td {
+  @apply text-gray-900;
 }
 
 .custom-table tbody {

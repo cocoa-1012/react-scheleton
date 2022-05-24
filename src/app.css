@@ -1,0 +1,3 @@
+.controller-btn {
+  @apply my-2 mx-2 flex cursor-pointer justify-center rounded-lg  bg-blue-500 px-5 py-2 text-2xl text-white hover:bg-blue-400;
+}

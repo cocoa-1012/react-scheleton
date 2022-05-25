@@ -25,7 +25,7 @@ const Pagination = (props) => {
         <select
           value={itemPerPage}
           onChange={(e) => setItemPerPage(e.target.value)}
-          class='block h-full w-full appearance-none border-0 border-b bg-white py-2 pl-2 pr-8 leading-tight text-gray-700 outline-none'
+          className='block h-full w-full appearance-none border-0 border-b bg-white py-2 pl-2 pr-8 leading-tight text-gray-700 outline-none'
         >
           {[5, 10, 20, 30, 50].map((i) => (
             <option value={i} key={i}>
@@ -35,22 +35,22 @@ const Pagination = (props) => {
         </select>
       </div>
       <nav aria-label='Page navigation example'>
-        <ul class='inline-flex items-center -space-x-px'>
+        <ul className='inline-flex items-center -space-x-px'>
           <li onClick={prevPage}>
             <span
-              class={`ml-0 block rounded-l-lg  ${
+              className={`ml-0 block rounded-l-lg  ${
                 currentPage === 1 ? 'cursor-not-allowed ' : ''
               } ${paginationItemClasses}`}
             >
-              <span class='sr-only'>Previous</span>
+              <span className='sr-only'>Previous</span>
               <FaAngleLeft />
             </span>
           </li>
 
           {Array.from(Array(totalPage)).map((_, i) => (
-            <li onClick={(e) => setCurrentPage(i + 1)}>
+            <li onClick={(e) => setCurrentPage(i + 1)} key={Math.random()}>
               <span
-                class={`${paginationItemClasses} ${
+                className={`${paginationItemClasses} ${
                   currentPage === i + 1 ? 'bg-green-400 hover:bg-green-500' : ''
                 } `}
               >
@@ -61,11 +61,11 @@ const Pagination = (props) => {
 
           <li onClick={nextPage}>
             <span
-              class={`block rounded-r-lg ${
+              className={`block rounded-r-lg ${
                 currentPage === totalPage ? 'cursor-not-allowed ' : ''
               }  ${paginationItemClasses}`}
             >
-              <span class='sr-only'>Next</span>
+              <span className='sr-only'>Next</span>
               <FaAngleRight />
             </span>
           </li>

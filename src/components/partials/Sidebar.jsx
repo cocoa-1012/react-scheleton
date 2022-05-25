@@ -86,7 +86,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
             </svg>
           </button>
           {/* Logo */}
-          <NavLink end to='/' className='block'>
+          <NavLink end to='/dashboard/camera' className='block'>
             <svg width='32' height='32' viewBox='0 0 32 32'>
               <defs>
                 <linearGradient
